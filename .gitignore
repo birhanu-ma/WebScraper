@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.coverage
+# Python package metadata/build files
+*.egg-info/
+build/
+dist/
+
+# Environments
+.venv/
+env/
+venv/
+.conda/
+.ipynb_checkpoints/
+
+# Data Files (Crucial for not committing large files)
+data/
+*.csv
+*.xlsx
+*.parquet
+
+# Operating System & IDE
+.DS_Store
+*.sublime-workspace
+.vscode/*
+!/.vscode/settings.json # Allow committing the settings file
