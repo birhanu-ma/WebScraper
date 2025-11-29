@@ -94,6 +94,7 @@ class PlayStoreScraper:
                     'bank_name': self.bank_names[bank_code],
                     'app_version': review.get('reviewCreatedVersion', 'N/A'),
                     'source': 'Google Play'
+                    
                 })
 
                 if len(collected) >= self.min_reviews_per_bank:
