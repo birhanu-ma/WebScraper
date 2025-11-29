@@ -11,6 +11,8 @@ torch>=2.0.0
 scikit-learn
 nltk
 gensim
+psycopg2-binary>=2.9
+
 
 
 
