@@ -5,3 +5,5 @@ python-dotenv
 tqdm
 matplotlib
 seaborn
+langdetect==1.0.9
+
