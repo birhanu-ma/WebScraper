@@ -21,6 +21,7 @@ def create_tables():
         review_date DATE,
         sentiment_label VARCHAR(20),
         sentiment_score NUMERIC(3,2),
+        theme VARCHAR(50),
         source VARCHAR(50)
     );
     """)
