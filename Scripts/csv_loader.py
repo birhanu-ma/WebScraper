@@ -55,9 +55,9 @@ class BankReviewLoader:
                 self.cur.execute("""
                     INSERT INTO reviews (
                         bank_id, review_text, rating, review_date,
-                        sentiment_label, sentiment_score, source
+                        sentiment_label, sentiment_score,theme, source
                     )
-                    VALUES (%s, %s, %s, %s, %s, %s, %s)
+                    VALUES (%s, %s, %s, %s, %s, %s,%s, %s)
                 """, (
                     bank_id,
                     row.get("review_text"),
@@ -65,6 +65,7 @@ class BankReviewLoader:
                     row.get("review_date"),
                     row.get("sentiment_label"),
                     row.get("sentiment_score"),
+                    row.get("theme"),
                     row.get("source"),
                 ))
                 count += 1
