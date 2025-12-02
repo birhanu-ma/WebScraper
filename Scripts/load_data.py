@@ -21,7 +21,7 @@ def load_reviews():
         r.sentiment_label,
         r.sentiment_score,
         r.source,
-        r.themes   -- if you stored themes
+        r.theme   -- if you stored theme
     FROM reviews r
     JOIN banks b ON r.bank_id = b.bank_id
     ORDER BY r.review_id;
